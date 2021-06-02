@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Covid</title>
+  </head>
+  <body>
+    <nav>
+      <div id="title">
+        <h2>Covid stats</h2>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a id="goto-home">HOME</a></li>
+          <li><a id="show-report">REPORT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="covid-img">
+          <img src="covid-img.png" alt="Corona virus" />
+        </div>
+        <div class="about-covid">
+          <div class="details">
+            <p>
+              Coronavirus disease (COVID-19) is an infectious disease caused by
+              a newly discovered coronavirus
+            </p>
+
+            <p>
+              The best way to prevent and slow down transmission is to be well
+              informed about the COVID-19 virus, the disease it causes and how
+              it spreads. Protect yourself and others from infection by washing
+              your hands or using an alcohol based rub frequently and not
+              touching your face.
+            </p>
+
+            <spam>Wear Mask,Stay Home,Stay Safe</spam>
+          </div>
+          <div class="btn">
+            <button id="fetch-btn">Get current Covid report</button>
+          </div>
+          <div class="reports">
+            <div class="report" id="confirmed">
+              <p class="title">Confirmed</p>
+              <p class="update"></p>
+              <p class="total">Fetching...</p>
+            </div>
+            <div class="report" id="active">
+              <p class="title">Active</p>
+              <!-- <p class="update">+XXXXX</p> -->
+              <p class="total">Fetching...</p>
+            </div>
+            <div class="report" id="recovered">
+              <p class="title">Recovered</p>
+              <p class="update"></p>
+              <p class="total">Fetching...</p>
+            </div>
+            <div class="report" id="decreased">
+              <p class="title">Decreased</p>
+              <p class="update"></p>
+              <p class="total">Fetching...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="app.js"></script>
+</html>

@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: #132743;
+    text-align: center;
+}
+#title{
+    position: relative;
+    left: 8rem;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+    height: 100%;
+    font-size: larger;
+}
+#title>h2{
+    text-transform: uppercase;
+}
+header{
+    text-align: center;
+}
+ul{
+    float: right;
+    margin-right: 20px;
+}
+ul li{
+    list-style: none;
+    display: inline;
+    line-height: 50px;
+}
+.nav-links{
+    float: right;
+}
+#goto-home{
+    border-color:#707070 ;
+}
+li a{
+    text-decoration: none;
+    font-size: larger;
+    margin: 0 2rem;
+    color: #ffffff;
+    padding: 2px 2rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+main .container{
+    width: 90%;
+    margin:2rem auto;
+    background-color: #DB1B4B;
+    min-height: 75vh;
+    max-height: auto;
+    border-radius: 5px;
+    display: flex;
+    padding: 1rem;
+    /* background-image: url("shirts.jpg");
+    background-position: center; */
+}
+.container .covid-img{
+    /* width: 40%;
+    height: 90%; */
+    margin: auto;
+}
+.covid-img img{
+    /* width: 90%;
+    height: 100%; */
+    border-radius: 50%;
+    margin: auto;
+}
+.container .about-covid{
+    width: 60%;
+    display: flex;
+    font-size: 22px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #DF4269;
+    padding: 2rem;
+    color: #ffffff;
+    text-indent: 1rem;
+    margin: 1rem;
+}
+.reports{
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;        
+    width: 100%;
+    height: 100%;
+}
+.report{
+    min-width: 40%;
+    min-height: 45%;
+    background-color: white;
+    margin:auto;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+#confirmed{
+    color: #FF0019;
+}
+#active{
+    color: #067EED;
+}
+#recovered{
+    color: #00FF44;
+}
+#decreased{
+    color:#504C4C ;
+}
+.title{
+    font-size: 2rem;
+}
+.update{
+    font-size: 1.5rem;
+    /* height: 2vh; */
+}
+.total{
+    position: relative;
+    bottom: 1.5rem;
+    font-size: 2rem;
+}
+.details spam{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+.about-covid .btn{
+    width: 100%;
+    height: 20vh;
+    display: grid;
+    place-items: center;
+}
+.btn #fetch-btn{
+    font-size: 1.5rem;
+    padding: 2px 20px;
+    border-radius: 5px;
+    border: none;
+    text-transform:uppercase;
+    cursor: pointer;
+}
+.btn #fetch-btn:active{
+    transform: translateY(3px);
+}
+@media screen and (max-width: 800px) {
+    main .container{
+        flex-direction: column;
+        width: auto;
+    }
+    .container .about-covid{
+        width: 100%;
+        margin: auto;
+    }
+    .about-covid,.covid-img{
+        display: none;
+    }
+    .reports{
+        flex-direction: column;
+    }
+    .report{
+        margin: 1rem;
+        height: 10rem;
+    }
+    .nav-links{
+        display: none;
+    }
+    #title{
+        left:0;
+    }
+}
