@@ -135,18 +135,22 @@ main .container{
 .about-covid .btn{
     width: 100%;
     height: 20vh;
-    display: grid;
-    place-items: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 .btn #fetch-btn{
+    background-color: #132743;
+    color: aliceblue;
     font-size: 1.5rem;
-    padding: 2px 20px;
+    padding: 10px 20px;
     border-radius: 5px;
     border: none;
     text-transform:uppercase;
     cursor: pointer;
 }
 .btn #fetch-btn:active{
+    background-color: rgba(19, 39, 67,0.6);
     transform: translateY(3px);
 }
 @media screen and (max-width: 800px) {

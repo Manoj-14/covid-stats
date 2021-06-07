@@ -37,11 +37,11 @@ const decreasedUpdate = document.querySelector("#decreased .update");
 let x,
   y = {};
 const apiKey = "https://corona.lmao.ninja/v2/countries/India";
-async function getDetails() {
-  const response = await fetch(apiKey);
-  const data = await response.json();
-  displaydata(data);
-}
+// async function getDetails() {
+//   const response = await fetch(apiKey);
+//   const data = await response.json();
+//   displaydata(data);
+// }
 displaydata=(data)=>{
   confirmedTotal.innerHTML = data.cases;
   confirmedUpdate.innerHTML = "+"+data.todayCases;
